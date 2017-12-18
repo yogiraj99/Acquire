@@ -1,0 +1,23 @@
+Acquire
+  --> Controller
+        ** loads the game
+          ## displays board -->
+          ## shuffles tiles -->
+          ## distributes money to players -->
+          ## decides turns -->
+        ** takes input gives to other function to process
+          ## game module-->
+            $$ build hotels
+            $$ buy shares
+            $$ acquires small hotels
+            $$ decides is game condition
+        ** gives back output of process
+
+
+
+
+
+read This ----
+  table attributes
+  table.insertRow
+  table.rows[0].cells[0].innerTex
