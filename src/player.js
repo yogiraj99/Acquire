@@ -4,13 +4,20 @@ const Player=function (playerName) {
   this.shares={};
 }
 
-Player.prototype.reciveMoney = function (money) {
-  this.money+=money;
-  return true;
+Player.prototype.reciveMoney = function (amount) {
+  this.money+=amount;
 };
 
-Player.prototype.addShares = function (HotelName,shares) {
-  this.shares[hotelName]+=shares;
+Player.prototype.payMoneny = function (amount) {
+  this.money-=amount;
+}
+
+Player.prototype.addShares = function (hotelName,shares) {
+  if (this.shares[hotelName]) {
+    this.shares[hotelName]+=shares;
+    return ;
+  }
+  this.shares[hotelName]=shares;
 };
 
 

@@ -3,9 +3,8 @@ const Bank=function(bankName){
   this.money=250000;
 }
 
-Bank.prototype.giveInitialMoney = function (player) {
+Bank.prototype.giveInitialMoneyToPlayer = function (player) {
   player.reciveMoney(5000);
-  return true;
 };
 
 Bank.prototype.creditMoney = function (creditTo,amount) {

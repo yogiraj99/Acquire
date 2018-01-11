@@ -1,6 +1,5 @@
 const Player = require('./player.js');
 const ManageHotels = require('./manageHotels.js');
-const Shares = require('./shares.js');
 const Bank = require('./bank.js');
 
 const Game = function (){
@@ -17,13 +16,11 @@ Game.prototype.startGame = function () {
 
 Game.prototype.addPlayer = function (playerName) {
   this.players[playerName]=new Player(playerName);
-  return true;
 };
 
 Game.prototype.initialMoneyDistribution = function () {
   let listOfPlayers=Object.keys(this.players);
-  listOfPlayers.forEach(bank.giveInitialMoney(player));
-  return true;
+  listOfPlayers.forEach(bank.giveInitialMoneyToPlayer(player));
 };
 
 Game.prototype.addHotels = function () {
@@ -31,3 +28,5 @@ Game.prototype.addHotels = function () {
   this.ManageHotels.addHotel("HotelAmbassador");
   this.ManageHotels.addHotel("HotelParadise");
 };
+
+module.exports = Game;

@@ -8,6 +8,9 @@ ManageHotels.prototype.addHotel = function (hotelName) {
   return true;
 };
 
-ManageHotels.prototype.buyShares=function(sharesOf,noOfShares,shareHolder){
-
+ManageHotels.prototype.buySharesOfHotel=function(hotelName,noOfShares,shareHolder){
+  let hotel=this.hotels[hotelName];
+  hotel.buyShares(shareHolder,noOfShares);
 }
+
+module.exports = ManageHotels;
