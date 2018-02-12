@@ -1,2 +1,2 @@
 # Create Game
-for Description [click here](wiki/Description)
+for Description [click here](https://github.com/yogiraj99/Acquire/wiki/Description)
